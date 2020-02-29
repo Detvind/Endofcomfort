@@ -1,0 +1,145 @@
+
+@font-face {
+  font-family: 'Lisung';
+  src:url('../fonts/Apple-LiSung-Light.ttf');
+}
+@font-face {
+  font-family: 'Content Text';
+  src:url('../fonts/heiti_xianxi.ttf');
+}
+body{
+
+}
+.back-button a{
+  font-family: "Lisung";
+  position: fixed;
+  text-align: center;
+  width: 90px;
+  height: 30px;
+  padding-top: 10px;
+  background-image: url('../media/back-button-bg.png');
+  background-size: cover;
+  left: 10px;
+  top: 10px;
+  text-decoration: none;
+  color: #dcdcdc;
+  border-radius: 3px;
+}
+
+.back-button a:hover{
+  color: #e9b653;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.chiupi-header{
+  padding-top: 10px;
+  text-align: center;
+}
+.chiupi-header img{
+  width: 100%;
+}
+
+.zero-art{
+  margin: 0 auto;
+  margin-top: 10%;
+  width: 95%;
+  height: 300px;
+  background-image: url('../media/zero-art-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  font-family: 'Content Text';
+  font-weight: bold;
+}
+
+.zero-art-dialog{
+  padding: 60px 5%;
+}
+.dialog-left{
+  padding-top: 20px;
+  text-align: left;
+}
+.dialog-right{
+  padding-top: 20px;
+  text-align: right;
+}
+
+.chiupi-info{
+  margin: 0 auto;
+  line-height: 2em;
+  background-image: url("../media/chiupi-info.png");
+  background-size: cover;
+  background-position: top;
+  width: 80%;
+  height: 600px;
+  font-family: 'Content Text';
+}
+
+.chiupi-info .chiupi-info-detail{
+  padding: 15% 5%;
+}
+
+
+.book-info{
+  margin-top: 5%;
+  background-image: url('../media/book-bg.jpg');
+  width: 70%;
+  height: 300px;
+  background-size: cover;
+  color: #dcdcdc;
+  font-family: 'Content Text';
+  font-weight: bold;
+  line-height: 2em;
+}
+
+.book-info .book-info-detail{
+  padding: 10% 5%;
+}
+
+.book-album{
+  width: 90%;
+  margin-top: 5%;
+  text-align: right;
+}
+.book-album-intro{
+  padding-left: 5%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  font-family: "Content Text";
+  line-height: 2em;
+}
+.book-album-intro, .book-album-cover{
+  display: inline-block;
+}
+
+.book-album-intro{
+  margin-right: 5%;
+}
+
+.book-info-detail .right-text{
+  text-align: right;
+}
+
+.album-title a{
+  font-size: 1.5em;
+  color: #000;
+  text-decoration: none;
+  border-bottom: 1px solid #e9b653;
+}
+
+.album-title a:hover{
+  color: #e9b653;
+  text-decoration: none;
+  border-bottom: 1px solid #000;
+}
+
+.footer img{
+  width: 100%;
+}
+
+@media screen and (max-width: 566px) and (orientation: portrait){
+  .book-info{
+    height: 400px;
+  }
+
+}

@@ -1,0 +1,650 @@
+/*  ----------------------------------------------
+            CSS TABLE OF CONTENTS
+    ------------------------------------------------- */
+/*
+1:  Loading Animation & Homepage
+2:  Old Earth
+3:  New Earth
+3:  Samsara
+4:  Rebirth
+6:  UIHC
+7:  Robot
+8:  Tang
+9:  Images
+10: CHIU PI - unique file in css folder
+
+/* Design & Created by Zhang Liwen, Qiu Tian, Duan Jiayu.
+----------------------------------------------------- */
+
+/* loading animation */
+@import url(https://fonts.googleapis.com/css?family=Quattrocento+Sans);
+
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  z-index: 99999;
+}
+
+.loading-text {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  width: 100%;
+  height: 100px;
+  line-height: 100px;
+}
+
+.loading-text span {
+  display: inline-block;
+  margin: 0 5px;
+  color: #fff;
+  font-family: 'Quattrocento Sans', sans-serif;
+}
+.loading-text span:nth-child(1) {
+  -webkit-filter: blur(0px);
+          filter: blur(0px);
+  -webkit-animation: blur-text 1.5s 0s infinite linear alternate;
+          animation: blur-text 1.5s 0s infinite linear alternate;
+}
+.loading-text span:nth-child(2) {
+  -webkit-filter: blur(0px);
+          filter: blur(0px);
+  -webkit-animation: blur-text 1.5s 0.2s infinite linear alternate;
+          animation: blur-text 1.5s 0.2s infinite linear alternate;
+}
+.loading-text span:nth-child(3) {
+  -webkit-filter: blur(0px);
+          filter: blur(0px);
+  -webkit-animation: blur-text 1.5s 0.4s infinite linear alternate;
+          animation: blur-text 1.5s 0.4s infinite linear alternate;
+}
+.loading-text span:nth-child(4) {
+  -webkit-filter: blur(0px);
+          filter: blur(0px);
+  -webkit-animation: blur-text 1.5s 0.6s infinite linear alternate;
+          animation: blur-text 1.5s 0.6s infinite linear alternate;
+}
+.loading-text span:nth-child(5) {
+  -webkit-filter: blur(0px);
+          filter: blur(0px);
+  -webkit-animation: blur-text 1.5s 0.8s infinite linear alternate;
+          animation: blur-text 1.5s 0.8s infinite linear alternate;
+}
+.loading-text span:nth-child(6) {
+  -webkit-filter: blur(0px);
+          filter: blur(0px);
+  -webkit-animation: blur-text 1.5s 1s infinite linear alternate;
+          animation: blur-text 1.5s 1s infinite linear alternate;
+}
+.loading-text span:nth-child(7) {
+  -webkit-filter: blur(0px);
+          filter: blur(0px);
+  -webkit-animation: blur-text 1.5s 1.2s infinite linear alternate;
+          animation: blur-text 1.5s 1.2s infinite linear alternate;
+}
+
+@-webkit-keyframes blur-text {
+  0% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+  }
+  100% {
+    -webkit-filter: blur(4px);
+            filter: blur(4px);
+  }
+}
+
+@keyframes blur-text {
+  0% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+  }
+  100% {
+    -webkit-filter: blur(4px);
+            filter: blur(4px);
+  }
+}
+
+
+
+
+
+/* Homepage */
+
+@font-face {
+  font-family: 'Content Text';
+  src:url('../fonts/heiti_xianxi.ttf');
+}
+@font-face {
+  font-family: 'Aquawax';
+  src:url('../fonts/Aquawax Light Trial.ttf');
+}
+@font-face {
+  font-family: 'Lisung';
+  src:url('../fonts/Apple-LiSung-Light.ttf');
+}
+@font-face {
+  font-family: 'Names';
+  src:url('../fonts/ZELDA Free.ttf');
+}
+
+@font-face {
+  font-family: 'big-title';
+  src:url('../fonts/jaapokki-regular.ttf');
+}
+
+
+body{
+  margin: 0;
+}
+
+
+
+#home-content{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url('../media/1.gif');
+  background-position: center center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.language-swicth a{
+  text-decoration: none;
+  color: #dcdcdc;
+  position: absolute;
+  top: 3%;
+  right: 3%;
+  font-size: 1em;
+  font-family: "Aquawax";
+}
+.language-swicth a:hover{
+  color: #e9b653;
+}
+
+.book-name-bg .zui{
+  position: absolute;
+  height: 200px;
+  left: -50px;
+  top: -60px;
+}
+.book-name-bg .hou{
+  position: absolute;
+  height: 200px;
+  right: -80px;
+  top: 70px;
+}
+
+.book-name-bg .an{
+  position: absolute;
+  height: 200px;
+  right: -80px;
+  bottom: -80px;
+}
+
+.book-name-bg .wei{
+  position: absolute;
+  height: 200px;
+  left: -50px;
+  bottom: 30px;
+}
+
+.audio-bar{
+  font-family:'Content Text';
+  text-decoration: none;
+  border-bottom: 1px solid #d3d3d3;
+  padding-bottom: 1.5px;
+  z-index: 3;
+  color: #d3d3d3;
+  position: absolute;
+  top: 3%;
+  left: 3%;
+}
+.audio-bar:hover{
+  color: #fff;
+}
+
+.introduction .book-title a{
+  padding-top: 2%;
+}
+.introduction .book-title a{
+  text-decoration: none;
+  color: #fff;
+  font-family: 'Names';
+  font-size: 1.65em;
+}
+.introduction .book-title a:hover{
+  text-decoration: none;
+  border-bottom: 2px solid #fff;
+  padding-bottom: 3px;
+}
+
+
+.introduction{
+  color: #d3d3d3;
+  font-family: "Aquawax", 'Content Text';
+  font-weight: bold;
+  font-size: 1em;
+  line-height: 1.5em;
+  position: absolute;
+  top: 12%;
+  right: 10%;
+  left: 40%;
+}
+
+.introduction img{
+  width: 100px;
+}
+
+.show-content1{
+  display:none;
+}
+
+.show-content1 .guideline{
+  font-size: 1em;
+}
+
+.arrow-right img{
+  height: 20px;
+  width: 40px;
+}
+
+
+.profile a{
+  font-family: 'Aquawax';
+  font-size: 1.25em;
+  position: absolute;
+  bottom: 3%;
+  left: 3%;
+  text-decoration: none;
+  color:#d3d3d3;
+}
+
+.order a {
+  font-family:'Aquawax','Lisung';
+  font-size: 1.25em;
+  position: absolute;
+  bottom: 3%;
+  right: 3%;
+  text-decoration: none;
+  color:#d3d3d3;
+}
+
+.profile a:hover, .order a:hover{
+  color: #fff;
+}
+
+
+
+
+
+/* Old Earth */
+#oldearth-content{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url('../media/2.gif');
+  background-position: center center;
+  background-size: cover;
+  overflow: hidden;
+}
+.oldearth-intro {
+  position: absolute;
+  left: 15%;
+  top: 15%;
+  right: 15%;
+  color: #fff;
+  font-family:'Aquawax', 'Content Text';
+}
+.oldearth-big-title{
+  font-family: "Names","Lisung";
+}
+.show-content2{
+  display: none;
+  line-height: 2em;
+  text-align: center;
+}
+.oldearth-intro img{
+  width: 100px;
+}
+
+.oldearth-intro .oldearth-big-title{
+  font-size: 2em;
+}
+
+.arrow-down img{
+  margin-top: 2%;
+  width: 30px;
+}
+
+.oldearth-detail{
+  font-size: 1.5em;
+}
+
+
+
+
+/* next page button */
+
+.next-button a{
+  font-family:'Aquawax', "Lisung";
+  font-style: normal;
+  border: 1px solid #dcdcdc;
+  padding: 5px 8px;
+  border-radius: 3px;
+  text-decoration: none;
+  color: #dcdcdc;
+}
+.next-button a:hover{
+  background-color: rgba(283, 182, 83, 0.1);
+  border-color: #fff;
+  color: #fff;
+}
+
+
+
+/* page control */
+.page-left a, .page-right a{
+  text-decoration: none;
+  color: #d3d3d3;
+}
+.page-left a:hover, .page-right a:hover{
+  color: #e9b653;
+}
+.page-left{
+  position: absolute;
+  font-size: 1.65em;
+  font-family: 'Content Text';
+  top: 40%;
+  left: 3%;
+}
+.page-right{
+  position: absolute;
+  font-size: 1.65em;
+  font-family: 'Content Text';
+  top: 40%;
+  right: 3%;
+  color: #d3d3d3;
+}
+
+
+
+/* New Earth */
+#newearth-content{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url('../media/3.gif');
+  background-position: center center;
+  background-size: cover;
+  overflow: hidden;
+}
+.newearth-intro {
+  font-family: 'Content Text';
+  text-align: right;
+  position: absolute;
+  left: 20%;
+  top: 20%;
+  right: 20%;
+}
+.newearth-intro img{
+  width: 100px;
+}
+.newearth-big-title{
+  font-family: "Names", "Lisung";
+  font-size: 2em;
+}
+.show-content3{
+  color: #fff;
+  display: none;
+}
+.arrow-down img{
+  width: 30px;
+}
+
+
+/* Samsara */
+#samsara-content{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url('../media/4.gif');
+  background-position: center center;
+  background-size: cover;
+  overflow: hidden;
+}
+.samsara-intro {
+  font-family:'Aquawax', 'Content Text';
+  font-style: italic;
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  left: 15%;
+  top: 15%;
+  right: 15%;
+}
+.samsara-big-title{
+  font-family: "Names";
+}
+.samsara-intro .samsara-big-title{
+  font-size: 2em;
+}
+.samsara-intro .samsara-line{
+  width: 100px;
+}
+.show-content4{
+  display: none;
+}
+.samsara-intro p{
+  line-height: 2.5em;
+}
+
+
+
+/* Rebirth */
+#rebirth-content{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url('../media/5.gif');
+  background-position: center center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.rebirth-intro {
+  font-family:'Aquawax', 'Content Text';
+  text-align: center;
+  font-weight: bold;
+  color: #fff;
+  position: absolute;
+  left: 20%;
+  top: 15%;
+  right: 20%;
+}
+.rebirth-big-title{
+  font-family: 'Names';
+}
+.rebirth-intro .rebirth-big-title{
+  color: #e9b653;
+  font-size: 2em;
+  font-family: "Lisung";
+}
+.show-content5{
+  display: none;
+  line-height: 2em;
+}
+
+
+/* UIHC */
+#UIHC-content{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url('../media/6.gif');
+  background-position: center center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.UIHC-intro {
+  font-family:'Aquawax', 'Content Text';
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  left: 20%;
+  top: 15%;
+  right: 20%;
+}
+.UIHC-line{
+  height: 100px;
+}
+.UIHC-big-title{
+  font-family: "Names";
+  font-size: 2em;
+}
+.show-content6{
+  line-height: 2em;
+  display: none;
+}
+
+/* Robot */
+#robot-content{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url('../media/7.gif');
+  background-position: center center;
+  background-size: cover;
+  overflow: hidden;
+}
+.robot-intro {
+  font-family:'Aquawax', 'Content Text';
+  text-align: left;
+  color: #fff;
+  position: absolute;
+  left: 15%;
+  top: 12%;
+  right: 20%;
+}
+
+.robot-big-title{
+  font-family: "Names","Lisung";
+  font-size: 2em;
+}
+.robot-line{
+  width: 100px;
+}
+.show-content7{
+  font-size: 0.9em;
+  display: none;
+  line-height: 2em;
+}
+
+/* Tang Energy */
+#tang-content{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url('../media/8.gif');
+  background-position: center center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.tang-intro {
+  font-family: 'Aquawax', 'Content Text';
+  font-size: 0.85em;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  left: 30%;
+  top: 8%;
+  right: 30%;
+}
+.tang-content-top{
+  margin-bottom: 3%;
+}
+.tang-big-title{
+  font-family: "Names", "Lisung";
+  font-size: 1.5em;
+}
+.tang-line img{
+  height: 100px;
+}
+.next-to-images{
+  margin-top: 5%;
+}
+.tang-arrow-right img{
+  width: 30px;
+  height: 16px;
+}
+.show-content8{
+  display: none;
+  line-height: 2em;
+}
+
+/* Images */
+#images-content{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url('../media/9.gif');
+  background-position: center center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.images-intro {
+  font-family:'Aquawax', 'Content Text';
+  text-align: right;
+  color: #fff;
+  position: absolute;
+  left: 20%;
+  top: 15%;
+  right: 20%;
+}
+.images-big-title{
+  font-family:"Names", "Lisung";
+  font-size: 2em;
+}
+.images-line{
+  height: 2px;
+  width: 300px;
+}
+.show-content9{
+  padding: 5%;
+  background-color: rgba(0, 0, 0, 0.1);
+  display: none;
+  line-height: 2em;
+}
+.book-name-end{
+  font-size: 1.5em;
+  font-family: "Aquawax", "Lisung";
+  font-style: italic;
+}
+.images-arrow-down img{
+  width: 30px;
+  height: 40px;
+  right: 5%;
+  bottom: 6%;
+  position: absolute;
+}
+.order-end a{
+  color:#e9b653;
+}
+
+
+.number{
+  font-family: "Content Text";
+}
